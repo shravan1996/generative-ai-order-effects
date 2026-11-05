@@ -35,6 +35,14 @@ CLOSE_CALL = re.compile(
     re.IGNORECASE)
 
 
+# Exploratory counts (deviation 3): replies that mention the listing order, or today's date.
+MENTIONS_ORDER = re.compile(
+    r"listed first|first[- ]listed|listing order|order (?:you|they|listed)|listed (?:second|above)"
+    r"|first in (?:the|your) list|first one (?:you )?listed|came first|first option|it's listed|only because",
+    re.IGNORECASE)
+MENTIONS_TODAY = re.compile(r"6 November|November 6|today is|today \(|from today|today's date", re.IGNORECASE)
+
+
 def load():
     """Every ok call, with its pick read again by the current parser (see deviation 1)."""
     rows = []
@@ -43,7 +51,7 @@ def load():
     for line in CALLS.read_text().splitlines():
         r = json.loads(line)
         if r.get("status") == "ok":
-            r["pick"], r["slot"] = choose.read_pick(choose.final_pick(r["content"]), ITEMS[r["item"]], r["order"])
+            r["pick"], r["slot"] = choose.read_pick(choose.final_pick(r["content"]), ITEMS[r["item"]], r["order"], r["arm"])
             rows.append(r)
     return rows
 
@@ -126,6 +134,63 @@ def classify(c):
     if sum(p == 1 for p in a) >= need_a and sum(p == 0 for p in b) >= need_b:
         return "follows_second"
     return "mixed"
+
+
+def flips_between(a, b):
+    if not a or not b:
+        return None
+    return sum(x != y for x in a for y in b) / (len(a) * len(b))
+
+
+def what_moves(rows, plain):
+    """Pooled flip rates on close items, each with an interval over items."""
+    close_items = [i for i, v in ITEMS.items() if v["tier"] == "close"]
+
+    def picks(source, model, item, order=None):
+        return [r["pick"] for r in source
+                if r["model"] == model and r["item"] == item and isinstance(r["pick"], int)
+                and (order is None or r["order"] == order)]
+
+    plain_close = [r for r in plain if r["tier"] == "close"]
+    by = {name: defaultdict(list) for name in ("repeat", "swap", "tie_ok", "score_first", "model")}
+    for item in close_items:
+        for m in MODELS:
+            ab, ba = picks(plain_close, m, item, [0, 1]), picks(plain_close, m, item, [1, 0])
+            rep, swap = repeat_and_swap(ab, ba)
+            by["repeat"][item].append(rep)
+            by["swap"][item].append(swap)
+            for arm in ("tie_ok", "score_first"):
+                src = [r for r in arm_rows(rows, arm) if r["item"] == item]
+                vals = [flips_between(picks(plain_close, m, item, o), picks(src, m, item, o)) for o in ([0, 1], [1, 0])]
+                vals = [v for v in vals if v is not None]
+                if vals:
+                    by[arm][item].append(sum(vals) / len(vals))
+        for a, b in combinations(MODELS, 2):
+            f = flips_between(picks(plain_close, a, item), picks(plain_close, b, item))
+            by["model"][item].append(f)
+
+    def pooled(d, keep=None):
+        d = {k: v for k, v in d.items() if v and (keep is None or keep(k))}
+        if not d:
+            return None
+        vals = [x for v in d.values() for x in v]
+        lo, hi = bootstrap(d, lambda x: x)
+        return {"flip": sum(vals) / len(vals), "ci": [lo, hi], "items": len(d)}
+
+    out = {name: pooled(d) for name, d in by.items()}
+    for dom in ("hire", "supplier", "project", "draft"):
+        out[dom] = {name: pooled(by[name], lambda k: ITEMS[k]["domain"] == dom) for name in ("repeat", "swap", "model")}
+    # Items where the three models' majority picks don't all agree.
+    split = []
+    for item in close_items:
+        tops = set()
+        for m in MODELS:
+            ps = picks(plain_close, m, item)
+            tops.add(max(set(ps), key=ps.count))
+        if len(tops) > 1:
+            split.append(item)
+    out["models_split_on"] = split
+    return out
 
 
 def arm_rows(rows, arm, effort=None):
@@ -304,6 +369,58 @@ def main():
     for k, v in groups.items():
         out["swap_test"][k] = {"disagree": sum(v) / len(v), "cells": len(v)}
 
+    # Exploratory: what moves a close call? Every rate is the chance two replies pick differently.
+    out["what_moves"] = what_moves(rows, pair_rows)
+
+    # Order effect for each model and kind of decision.
+    out["by_model_and_kind"] = {}
+    for m in MODELS:
+        for dom in ("hire", "supplier", "project", "draft"):
+            sub = {k: v for k, v in cells.items() if ITEMS[k[1]]["domain"] == dom}
+            s = summarise(tier_stats(sub, "close", [m]))
+            out["by_model_and_kind"][f"{m}/{dom}"] = s
+
+    # Twins: the exact ones (same block, two names) and the two drafts that differ by a word.
+    twins = [r for r in pair_rows if r["tier"] == "twin"]
+    exact = [r for r in twins if r["domain"] != "draft"]
+    near = [r for r in twins if r["domain"] == "draft"]
+    out["twins_split"] = {
+        "exact_first_slot": sum(r["slot"] == 0 for r in exact), "exact_of": len(exact),
+        "near_first_slot": sum(r["slot"] == 0 for r in near), "near_of": len(near),
+        "mentions_order": {m: sum(bool(MENTIONS_ORDER.search(r["content"])) for r in exact if r["model"] == m) for m in MODELS},
+    }
+
+    # Close replies: do they ever mention the order or today's date?
+    close_rows = [r for r in pair_rows if r["tier"] == "close"]
+    out["close_mentions"] = {
+        "order": sum(bool(MENTIONS_ORDER.search(r["content"])) for r in close_rows),
+        "today": sum(bool(MENTIONS_TODAY.search(r["content"])) for r in close_rows),
+        "of": len(close_rows)}
+
+    # "Too close" by kind of decision.
+    sub = [r for r in arm_rows(rows, "tie_ok") if r["tier"] == "close"]
+    if sub:
+        out["too_close_by_kind"] = {
+            dom: {"said": sum(r["pick"] == "tie" for r in sub if r["domain"] == dom),
+                  "of": sum(r["domain"] == dom for r in sub)}
+            for dom in ("hire", "supplier", "project", "draft")}
+        tally = defaultdict(int)
+        for r in sub:
+            if r["pick"] == "tie":
+                tally[f"{r['model']}/{r['item']}"] += 1
+        out["too_close_where"] = dict(tally)
+
+    # Neutral labels (deviation 2): does the lean to the last draft survive names that stay put?
+    sub = arm_rows(rows, "neutral_labels")
+    if sub:
+        out["neutral_labels"] = {}
+        for m in ("claude-haiku-5-5", "claude-sonnet-5-5"):
+            n_ = [r for r in sub if r["model"] == m and isinstance(r["slot"], int)]
+            p_ = [r for r in close_rows if r["model"] == m and r["domain"] == "draft" and isinstance(r["slot"], int)]
+            out["neutral_labels"][m] = {
+                "neutral_first": sum(r["slot"] == 0 for r in n_), "neutral_of": len(n_),
+                "position_first": sum(r["slot"] == 0 for r in p_), "position_of": len(p_)}
+
     (ROOT / "results").mkdir(exist_ok=True)
     (ROOT / "results" / "summary.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
     print_report(out)
@@ -355,6 +472,21 @@ def print_report(o):
         print("  first slot CI", [pct(x) for x in o["five"]["first_slot_ci"]])
         print("  top options", json.dumps(o["five"]["top_option_share"]))
     print("SWAP TEST", json.dumps(o["swap_test"]))
+    print("WHAT MOVES A CLOSE CALL (exploratory)")
+    for k, v in o["what_moves"].items():
+        if isinstance(v, dict) and "flip" in v:
+            print(f"  {k:12} {pct(v['flip']):>5} [{pct(v['ci'][0])}, {pct(v['ci'][1])}]")
+        elif isinstance(v, dict):
+            print(f"  {k:12} " + "  ".join(f"{n} {pct(x['flip'])}" for n, x in v.items() if x))
+        else:
+            print(f"  {k:12} {v}")
+    print("BY MODEL AND KIND")
+    for k, s in o["by_model_and_kind"].items():
+        line(k, s)
+    print("TWINS", json.dumps(o["twins_split"]))
+    print("CLOSE MENTIONS", json.dumps(o["close_mentions"]))
+    print("TOO CLOSE BY KIND", json.dumps(o.get("too_close_by_kind")), json.dumps(o.get("too_close_where")))
+    print("NEUTRAL LABELS", json.dumps(o.get("neutral_labels")))
 
 
 if __name__ == "__main__":

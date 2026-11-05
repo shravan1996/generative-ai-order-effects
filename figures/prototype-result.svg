@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="615" viewBox="0 0 680 615" role="img" aria-labelledby="title desc">
+  <title id="title">Swapping moved it less than switching model</title>
+  <desc id="desc">The same words again: 7.2%, interval 3.3 to 11.8; Adding &quot;score each one out of 10&quot;: 9.0%, interval 4.8 to 14.0; Swapping the order: 11.5%, interval 5.8 to 17.9; Adding &quot;say if it&#x27;s too close&quot;: 12.1%, interval 6.7 to 18.1; Asking a different Claude model: 19.8%, interval 10.2 to 30.3. By kind of decision, same words, swapped order, different model: Hires 1.7, 1.7, 1.7; Projects 3.3, 3.3, 16.5; Suppliers 10.0, 15.0, 21.5; Drafts 13.9, 25.8, 39.6.</desc>
+  <style>
+    text { stroke: none; }
+    .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+    .sans  { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .h1 { font-size: 26px; font-weight: 600; fill: #191F1D; }
+    .sub { font-size: 14.5px; fill: #3F4945; }
+    .label { font-size: 11px; font-weight: 700; letter-spacing: 1.1px; fill: #5C6964; }
+    .row { font-size: 14.5px; fill: #191F1D; }
+    .rowb { font-size: 14.5px; font-weight: 600; fill: #191F1D; }
+    .cell { font-size: 13.5px; fill: #3F4945; }
+    .val { font-size: 14px; font-weight: 700; fill: #191F1D; }
+    .num { font-size: 14px; fill: #3F4945; }
+    .axis { font-size: 12px; fill: #5C6964; }
+    .foot { font-size: 13.5px; fill: #3F4945; }
+  </style>
+  <text class="serif h1" x="32.0" y="44.0">Swapping moved it less than switching model</text>
+  <text class="sans sub" x="32.0" y="72.0">How often two replies chose differently, on 20 close calls and three</text>
+  <text class="sans sub" x="32.0" y="92.0">Claude models. Lines show 95% intervals over the 20 decisions.</text>
+  <line x1="32.0" y1="112.0" x2="648.0" y2="112.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans label" x="32.0" y="140.0">WHAT CHANGED BETWEEN THE TWO REPLIES</text>
+  <text class="sans label" x="300.0" y="140.0">CHOSE DIFFERENTLY</text>
+  <line x1="300.0" y1="156.0" x2="300.0" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>
+  <line x1="390.3" y1="156.0" x2="390.3" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>
+  <line x1="480.6" y1="156.0" x2="480.6" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>
+  <line x1="570.9" y1="156.0" x2="570.9" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans row" x="32.0" y="175.0">The same words again</text>
+  <rect x="300.0" y="163.0" width="65.2" height="16" rx="2" fill="#A9B7B1"/>
+  <line x1="330.1" y1="171.0" x2="406.6" y2="171.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="330.1" y1="167.0" x2="330.1" y2="175.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="406.6" y1="167.0" x2="406.6" y2="175.0" stroke="#191F1D" stroke-width="1.5"/>
+  <text class="sans val" x="414.6" y="176.0">7.2%</text>
+  <text class="sans row" x="32.0" y="209.0">Adding &quot;score each one out of 10&quot;</text>
+  <rect x="300.0" y="197.0" width="80.9" height="16" rx="2" fill="#A9B7B1"/>
+  <line x1="343.3" y1="205.0" x2="426.0" y2="205.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="343.3" y1="201.0" x2="343.3" y2="209.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="426.0" y1="201.0" x2="426.0" y2="209.0" stroke="#191F1D" stroke-width="1.5"/>
+  <text class="sans val" x="434.0" y="210.0">9.0%</text>
+  <text class="sans rowb" x="32.0" y="243.0">Swapping the order</text>
+  <rect x="300.0" y="231.0" width="103.5" height="16" rx="2" fill="#1F6B4C"/>
+  <line x1="352.7" y1="239.0" x2="461.8" y2="239.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="352.7" y1="235.0" x2="352.7" y2="243.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="461.8" y1="235.0" x2="461.8" y2="243.0" stroke="#191F1D" stroke-width="1.5"/>
+  <text class="sans val" x="469.8" y="244.0">11.5%</text>
+  <text class="sans row" x="32.0" y="277.0">Adding &quot;say if it&#x27;s too close&quot;</text>
+  <rect x="300.0" y="265.0" width="109.1" height="16" rx="2" fill="#A9B7B1"/>
+  <line x1="360.2" y1="273.0" x2="463.6" y2="273.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="360.2" y1="269.0" x2="360.2" y2="277.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="463.6" y1="269.0" x2="463.6" y2="277.0" stroke="#191F1D" stroke-width="1.5"/>
+  <text class="sans val" x="471.6" y="278.0">12.1%</text>
+  <text class="sans row" x="32.0" y="311.0">Asking a different Claude model</text>
+  <rect x="300.0" y="299.0" width="178.7" height="16" rx="2" fill="#A9B7B1"/>
+  <line x1="391.7" y1="307.0" x2="573.7" y2="307.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="391.7" y1="303.0" x2="391.7" y2="311.0" stroke="#191F1D" stroke-width="1.5"/>
+  <line x1="573.7" y1="303.0" x2="573.7" y2="311.0" stroke="#191F1D" stroke-width="1.5"/>
+  <text class="sans val" x="581.7" y="312.0">19.8%</text>
+  <text class="sans axis" x="300.0" y="344.0" text-anchor="middle">0%</text>
+  <text class="sans axis" x="390.3" y="344.0" text-anchor="middle">10%</text>
+  <text class="sans axis" x="480.6" y="344.0" text-anchor="middle">20%</text>
+  <text class="sans axis" x="570.9" y="344.0" text-anchor="middle">30%</text>
+  <line x1="32.0" y1="362.0" x2="648.0" y2="362.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans label" x="32.0" y="390.0">BY KIND OF DECISION</text>
+  <text class="sans label" x="420.0" y="390.0" text-anchor="middle">SAME WORDS</text>
+  <text class="sans label" x="510.0" y="390.0" text-anchor="middle">SWAPPED</text>
+  <text class="sans label" x="600.0" y="390.0" text-anchor="middle">OTHER MODEL</text>
+  <text class="sans row" x="32.0" y="418.0">Hires</text>
+  <text class="sans num" x="420.0" y="418.0" text-anchor="middle">1.7%</text>
+  <text class="sans val" x="510.0" y="418.0" text-anchor="middle">1.7%</text>
+  <text class="sans num" x="600.0" y="418.0" text-anchor="middle">1.7%</text>
+  <text class="sans row" x="32.0" y="444.0">Projects</text>
+  <text class="sans num" x="420.0" y="444.0" text-anchor="middle">3.3%</text>
+  <text class="sans val" x="510.0" y="444.0" text-anchor="middle">3.3%</text>
+  <text class="sans num" x="600.0" y="444.0" text-anchor="middle">16.5%</text>
+  <text class="sans row" x="32.0" y="470.0">Suppliers</text>
+  <text class="sans num" x="420.0" y="470.0" text-anchor="middle">10.0%</text>
+  <text class="sans val" x="510.0" y="470.0" text-anchor="middle">15.0%</text>
+  <text class="sans num" x="600.0" y="470.0" text-anchor="middle">21.5%</text>
+  <text class="sans row" x="32.0" y="496.0">Drafts</text>
+  <text class="sans num" x="420.0" y="496.0" text-anchor="middle">13.9%</text>
+  <text class="sans val" x="510.0" y="496.0" text-anchor="middle">25.8%</text>
+  <text class="sans num" x="600.0" y="496.0" text-anchor="middle">39.6%</text>
+  <line x1="32.0" y1="518.0" x2="648.0" y2="518.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans foot" x="32.0" y="542.0">The swap row was pre-registered. Comparing across models or against a closing line was</text>
+  <text class="sans foot" x="32.0" y="561.0">added after I saw the results, so read those rows as a description. Asking again is</text>
+  <text class="sans foot" x="32.0" y="580.0">the noise floor.</text>
+</svg>

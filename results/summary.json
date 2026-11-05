@@ -1,7 +1,7 @@
 {
- "calls": 1956,
- "cost_usd": 22.59,
- "seconds_mean": 14.9,
+ "calls": 2036,
+ "cost_usd": 23.03,
+ "seconds_mean": 14.8,
  "unreadable": {
   "claude-haiku-5-5": 0,
   "claude-sonnet-5-5": 0,
@@ -1921,6 +1921,408 @@
   "close:follows_first": {
    "disagree": 0.6875,
    "cells": 2
+  }
+ },
+ "what_moves": {
+  "repeat": {
+   "flip": 0.07222222222222222,
+   "ci": [
+    0.03333333333333333,
+    0.11805555555555555
+   ],
+   "items": 20
+  },
+  "swap": {
+   "flip": 0.11458333333333333,
+   "ci": [
+    0.058333333333333334,
+    0.17916666666666667
+   ],
+   "items": 20
+  },
+  "tie_ok": {
+   "flip": 0.12083333333333333,
+   "ci": [
+    0.06666666666666667,
+    0.18125
+   ],
+   "items": 20
+  },
+  "score_first": {
+   "flip": 0.08958333333333333,
+   "ci": [
+    0.04791666666666667,
+    0.13958333333333334
+   ],
+   "items": 20
+  },
+  "model": {
+   "flip": 0.19791666666666666,
+   "ci": [
+    0.1015625,
+    0.303125
+   ],
+   "items": 20
+  },
+  "hire": {
+   "repeat": {
+    "flip": 0.016666666666666666,
+    "ci": [
+     0.0,
+     0.05
+    ],
+    "items": 5
+   },
+   "swap": {
+    "flip": 0.016666666666666666,
+    "ci": [
+     0.0,
+     0.05
+    ],
+    "items": 5
+   },
+   "model": {
+    "flip": 0.016666666666666666,
+    "ci": [
+     0.0,
+     0.05
+    ],
+    "items": 5
+   }
+  },
+  "supplier": {
+   "repeat": {
+    "flip": 0.1,
+    "ci": [
+     0.02222222222222222,
+     0.1888888888888889
+    ],
+    "items": 5
+   },
+   "swap": {
+    "flip": 0.15,
+    "ci": [
+     0.03333333333333333,
+     0.2833333333333333
+    ],
+    "items": 5
+   },
+   "model": {
+    "flip": 0.21458333333333332,
+    "ci": [
+     0.03333333333333333,
+     0.3958333333333333
+    ],
+    "items": 5
+   }
+  },
+  "project": {
+   "repeat": {
+    "flip": 0.03333333333333333,
+    "ci": [
+     0.0,
+     0.1
+    ],
+    "items": 5
+   },
+   "swap": {
+    "flip": 0.03333333333333333,
+    "ci": [
+     0.0,
+     0.1
+    ],
+    "items": 5
+   },
+   "model": {
+    "flip": 0.16458333333333333,
+    "ci": [
+     0.0,
+     0.43125
+    ],
+    "items": 5
+   }
+  },
+  "draft": {
+   "repeat": {
+    "flip": 0.1388888888888889,
+    "ci": [
+     0.05,
+     0.24444444444444444
+    ],
+    "items": 5
+   },
+   "swap": {
+    "flip": 0.25833333333333336,
+    "ci": [
+     0.15,
+     0.35
+    ],
+    "items": 5
+   },
+   "model": {
+    "flip": 0.3958333333333333,
+    "ci": [
+     0.25416666666666665,
+     0.5375
+    ],
+    "items": 5
+   }
+  },
+  "models_split_on": [
+   "vendor-3",
+   "project-5",
+   "draft-1",
+   "draft-3"
+  ]
+ },
+ "by_model_and_kind": {
+  "claude-haiku-5-5/hire": {
+   "repeat_flip": 0.0,
+   "swap_flip": 0.0,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.5,
+   "first_slot_ci": [
+    0.5,
+    0.5
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-haiku-5-5/supplier": {
+   "repeat_flip": 0.25,
+   "swap_flip": 0.3,
+   "order_effect": 0.04999999999999999,
+   "order_effect_ci": [
+    -0.03333333333333335,
+    0.13333333333333336
+   ],
+   "first_slot": 0.375,
+   "first_slot_ci": [
+    0.275,
+    0.475
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-haiku-5-5/project": {
+   "repeat_flip": 0.0,
+   "swap_flip": 0.0,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.5,
+   "first_slot_ci": [
+    0.5,
+    0.5
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-haiku-5-5/draft": {
+   "repeat_flip": 0.16666666666666666,
+   "swap_flip": 0.5,
+   "order_effect": 0.33333333333333337,
+   "order_effect_ci": [
+    0.03333333333333334,
+    0.7
+   ],
+   "first_slot": 0.25,
+   "first_slot_ci": [
+    0.1,
+    0.4
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-sonnet-5-5/hire": {
+   "repeat_flip": 0.05,
+   "swap_flip": 0.05,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.475,
+   "first_slot_ci": [
+    0.425,
+    0.5
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-sonnet-5-5/supplier": {
+   "repeat_flip": 0.05,
+   "swap_flip": 0.15,
+   "order_effect": 0.09999999999999999,
+   "order_effect_ci": [
+    0.0,
+    0.3
+   ],
+   "first_slot": 0.575,
+   "first_slot_ci": [
+    0.5,
+    0.725
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-sonnet-5-5/project": {
+   "repeat_flip": 0.05,
+   "swap_flip": 0.05,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.525,
+   "first_slot_ci": [
+    0.5,
+    0.575
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-sonnet-5-5/draft": {
+   "repeat_flip": 0.1,
+   "swap_flip": 0.125,
+   "order_effect": 0.024999999999999994,
+   "order_effect_ci": [
+    0.0,
+    0.075
+   ],
+   "first_slot": 0.55,
+   "first_slot_ci": [
+    0.5,
+    0.65
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-opus-5-5/hire": {
+   "repeat_flip": 0.0,
+   "swap_flip": 0.0,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.5,
+   "first_slot_ci": [
+    0.5,
+    0.5
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-opus-5-5/supplier": {
+   "repeat_flip": 0.0,
+   "swap_flip": 0.0,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.5,
+   "first_slot_ci": [
+    0.5,
+    0.5
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-opus-5-5/project": {
+   "repeat_flip": 0.05,
+   "swap_flip": 0.05,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.525,
+   "first_slot_ci": [
+    0.5,
+    0.575
+   ],
+   "items": 5,
+   "cells": 5
+  },
+  "claude-opus-5-5/draft": {
+   "repeat_flip": 0.15,
+   "swap_flip": 0.15,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.525,
+   "first_slot_ci": [
+    0.45,
+    0.6
+   ],
+   "items": 5,
+   "cells": 5
+  }
+ },
+ "twins_split": {
+  "exact_first_slot": 143,
+  "exact_of": 144,
+  "near_first_slot": 24,
+  "near_of": 48,
+  "mentions_order": {
+   "claude-haiku-5-5": 2,
+   "claude-sonnet-5-5": 7,
+   "claude-opus-5-5": 34
+  }
+ },
+ "close_mentions": {
+  "order": 0,
+  "today": 52,
+  "of": 480
+ },
+ "too_close_by_kind": {
+  "hire": {
+   "said": 1,
+   "of": 60
+  },
+  "supplier": {
+   "said": 5,
+   "of": 60
+  },
+  "project": {
+   "said": 5,
+   "of": 60
+  },
+  "draft": {
+   "said": 0,
+   "of": 60
+  }
+ },
+ "too_close_where": {
+  "claude-haiku-5-5/vendor-3": 2,
+  "claude-sonnet-5-5/vendor-1": 3,
+  "claude-sonnet-5-5/project-2": 2,
+  "claude-sonnet-5-5/project-5": 1,
+  "claude-sonnet-5-5/project-4": 2,
+  "claude-sonnet-5-5/hire-2": 1
+ },
+ "neutral_labels": {
+  "claude-haiku-5-5": {
+   "neutral_first": 10,
+   "neutral_of": 40,
+   "position_first": 10,
+   "position_of": 40
+  },
+  "claude-sonnet-5-5": {
+   "neutral_first": 19,
+   "neutral_of": 40,
+   "position_first": 22,
+   "position_of": 40
   }
  }
 }

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="662" viewBox="0 0 680 662" role="img" aria-labelledby="title desc">
+  <title id="title">When I&#x27;d swap the order, and when I wouldn&#x27;t</title>
+  <desc id="desc">Quotes, CVs or projects, on Sonnet or Opus: Ask once. Order moved almost nothing here except one payroll quote, and a clearly worse option never won. Two pieces of writing: Ask twice, with the order swapped. If the picks differ, call it a draw and decide yourself. Drafts moved more than anything else I tested. A small, fast model: Swap every time, or use a larger model for this one job. Haiku changed which draft it chose half the time when I swapped them. It says nothing separates them: Believe the sentence and ignore the name. The name was the first-listed option in 143 of 144 replies. The decision really matters: Ask a second model too, and read where they differ. Disagreement tells you it&#x27;s a judgement call. It doesn&#x27;t tell you who&#x27;s right. The reply sounds sure of itself: Don&#x27;t take that as a sign the pick is steady. None of the 480 replies to close calls mentioned the order, including the ones that changed with it. All of this comes from short options I wrote myself. Long documents are untested, and they&#x27;re where I&#x27;d expect order to matter more.</desc>
+  <style>
+    text { stroke: none; }
+    .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+    .sans  { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .h1 { font-size: 26px; font-weight: 600; fill: #191F1D; }
+    .sub { font-size: 14.5px; fill: #3F4945; }
+    .label { font-size: 11px; font-weight: 700; letter-spacing: 1.1px; fill: #5C6964; }
+    .row { font-size: 14.5px; fill: #191F1D; }
+    .rowb { font-size: 14.5px; font-weight: 600; fill: #191F1D; }
+    .cell { font-size: 13.5px; fill: #3F4945; }
+    .val { font-size: 14px; font-weight: 700; fill: #191F1D; }
+    .num { font-size: 14px; fill: #3F4945; }
+    .axis { font-size: 12px; fill: #5C6964; }
+    .foot { font-size: 13.5px; fill: #3F4945; }
+  </style>
+  <text class="serif h1" x="32.0" y="44.0">When I&#x27;d swap the order, and when I wouldn&#x27;t</text>
+  <text class="sans sub" x="32.0" y="72.0">For choosing between options you&#x27;ve pasted into Claude, as of November 2026.</text>
+  <line x1="32.0" y1="92.0" x2="648.0" y2="92.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="120.0">Quotes, CVs or projects,</text>
+  <text class="sans rowb" x="32.0" y="140.0">on Sonnet or Opus</text>
+  <text class="sans cell" x="238.0" y="120.0">Ask once. Order moved almost nothing here except one</text>
+  <text class="sans cell" x="238.0" y="139.0">payroll quote, and a clearly worse option never won.</text>
+  <line x1="32.0" y1="164.0" x2="648.0" y2="164.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="190.0">Two pieces of writing</text>
+  <text class="sans cell" x="238.0" y="190.0">Ask twice, with the order swapped. If the picks differ,</text>
+  <text class="sans cell" x="238.0" y="209.0">call it a draw and decide yourself. Drafts moved more</text>
+  <text class="sans cell" x="238.0" y="228.0">than anything else I tested.</text>
+  <line x1="32.0" y1="251.0" x2="648.0" y2="251.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="277.0">A small, fast model</text>
+  <text class="sans cell" x="238.0" y="277.0">Swap every time, or use a larger model for this one job.</text>
+  <text class="sans cell" x="238.0" y="296.0">Haiku changed which draft it chose half the time when I</text>
+  <text class="sans cell" x="238.0" y="315.0">swapped them.</text>
+  <line x1="32.0" y1="338.0" x2="648.0" y2="338.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="364.0">It says nothing</text>
+  <text class="sans rowb" x="32.0" y="384.0">separates them</text>
+  <text class="sans cell" x="238.0" y="364.0">Believe the sentence and ignore the name. The name was</text>
+  <text class="sans cell" x="238.0" y="383.0">the first-listed option in 143 of 144 replies.</text>
+  <line x1="32.0" y1="408.0" x2="648.0" y2="408.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="434.0">The decision really</text>
+  <text class="sans rowb" x="32.0" y="454.0">matters</text>
+  <text class="sans cell" x="238.0" y="434.0">Ask a second model too, and read where they differ.</text>
+  <text class="sans cell" x="238.0" y="453.0">Disagreement tells you it&#x27;s a judgement call. It doesn&#x27;t</text>
+  <text class="sans cell" x="238.0" y="472.0">tell you who&#x27;s right.</text>
+  <line x1="32.0" y1="495.0" x2="648.0" y2="495.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans rowb" x="32.0" y="521.0">The reply sounds sure of</text>
+  <text class="sans rowb" x="32.0" y="541.0">itself</text>
+  <text class="sans cell" x="238.0" y="521.0">Don&#x27;t take that as a sign the pick is steady. None of the</text>
+  <text class="sans cell" x="238.0" y="540.0">480 replies to close calls mentioned the order, including</text>
+  <text class="sans cell" x="238.0" y="559.0">the ones that changed with it.</text>
+  <line x1="32.0" y1="582.0" x2="648.0" y2="582.0" stroke="#D3DBD7" stroke-width="1"/>
+  <text class="sans foot" x="32.0" y="608.0">All of this comes from short options I wrote myself. Long documents are untested, and</text>
+  <text class="sans foot" x="32.0" y="627.0">they&#x27;re where I&#x27;d expect order to matter more.</text>
+</svg>

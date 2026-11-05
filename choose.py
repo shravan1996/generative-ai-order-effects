@@ -36,6 +36,8 @@ ARMS = {
     "plain": "",
     "tie_ok": "If they're too close to call on what I've given you, say so and write 'Pick: too close'.",
     "score_first": "Before you choose, score each one out of 10 on whatever matters most here, then choose.",
+    # Exploratory, added after the main run (deviation 2): drafts get names that stay with the text.
+    "neutral_labels": "",
 }
 
 _lock = threading.Lock()
@@ -49,10 +51,13 @@ def orders(item):
     return [[(start + i) % n for i in range(n)] for start in range(n)]
 
 
-def label(item, order, slot):
+def label(item, order, slot, arm="plain"):
     """The name the model sees for the option in this slot. Drafts are labelled by position,
-    the way people paste them, so 'Draft 1' is always whichever draft came first."""
+    the way people paste them, so 'Draft 1' is always whichever draft came first. In the
+    neutral_labels arm the name stays with the text instead."""
     if item["domain"] == "draft":
+        if arm == "neutral_labels":
+            return ["Draft Maple", "Draft Rowan"][order[slot]]
         return f"Draft {slot + 1}"
     return item["options"][order[slot]]["name"]
 
@@ -60,7 +65,7 @@ def label(item, order, slot):
 def message(item, order, arm="plain"):
     blocks = []
     for slot, idx in enumerate(order):
-        blocks.append(f"{label(item, order, slot)}\n{item['options'][idx]['text']}")
+        blocks.append(f"{label(item, order, slot, arm)}\n{item['options'][idx]['text']}")
     parts = [item["ask"], *blocks]
     if ARMS[arm]:
         parts.append(ARMS[arm])
@@ -80,18 +85,25 @@ def final_pick(text):
     return hits[-1].strip().strip("*`_'\"<>. ").strip()
 
 
-def read_pick(raw, item, order):
+def read_pick(raw, item, order, arm="plain"):
     """Return (option index, slot). Option index is None for an unreadable pick, 'tie' for too close."""
     if raw is None:
         return None, None
     low = raw.lower()
     if "too close" in low:
         return "tie", None
-    matches = []
-    for slot, idx in enumerate(order):
-        name = label(item, order, slot).lower()
-        if name in low:
-            matches.append((idx, slot))
+    names = [label(item, order, slot, arm).lower() for slot in range(len(order))]
+    matches = [(order[slot], slot) for slot, name in enumerate(names) if name in low]
+    if len(matches) == 1:
+        return matches[0]
+    if matches:
+        return None, None
+    # No full name, as in 'Pick: Rowan' for 'Project Rowan': accept a word only one option has.
+    words = set(re.findall(r"[\w&'-]+", low))
+    for slot, name in enumerate(names):
+        others = {w for j, n in enumerate(names) if j != slot for w in n.split()}
+        if words & (set(name.split()) - others):
+            matches.append((order[slot], slot))
     if len(matches) == 1:
         return matches[0]
     return None, None
@@ -153,7 +165,7 @@ def run_one(model, effort, arm, item, order, rep):
            "at": datetime.now().isoformat(timespec="seconds"), **out}
     if out["status"] == "ok":
         raw = final_pick(out["content"])
-        idx, slot = read_pick(raw, item, order)
+        idx, slot = read_pick(raw, item, order, arm)
         rec.update({"raw_pick": raw, "pick": idx, "slot": slot})
     append(rec)
     return rec
@@ -168,7 +180,7 @@ def main():
     ap.add_argument("--effort", default=None, help="passed to the CLI's --effort; omit for its default")
     ap.add_argument("--workers", type=int, default=10)
     ap.add_argument("--deadline", type=float, default=540, help="stop submitting new calls after this many seconds")
-    ap.add_argument("--only", nargs="*", default=None, help="only these item ids (for a smoke test)")
+    ap.add_argument("--only", nargs="*", default=None, help="only these item ids")
     args = ap.parse_args()
 
     items = [i for i in json.loads(ITEMS.read_text()) if i["tier"] in args.tiers]

@@ -1,0 +1,1926 @@
+{
+ "calls": 1956,
+ "cost_usd": 22.59,
+ "seconds_mean": 14.9,
+ "unreadable": {
+  "claude-haiku-5-5": 0,
+  "claude-sonnet-5-5": 0,
+  "claude-opus-5-5": 0
+ },
+ "tiers": {
+  "close": {
+   "pooled": {
+    "repeat_flip": 0.07222222222222222,
+    "swap_flip": 0.11458333333333333,
+    "order_effect": 0.04236111111111111,
+    "order_effect_ci": [
+     0.0125,
+     0.08333333333333333
+    ],
+    "first_slot": 0.48333333333333334,
+    "first_slot_ci": [
+     0.45208333333333334,
+     0.5125
+    ],
+    "items": 20,
+    "cells": 60
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.10416666666666667,
+    "swap_flip": 0.2,
+    "order_effect": 0.09583333333333334,
+    "order_effect_ci": [
+     0.012499999999999997,
+     0.21666666666666665
+    ],
+    "first_slot": 0.40625,
+    "first_slot_ci": [
+     0.3375,
+     0.4625
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.0625,
+    "swap_flip": 0.09375,
+    "order_effect": 0.03125,
+    "order_effect_ci": [
+     0.0,
+     0.0875
+    ],
+    "first_slot": 0.53125,
+    "first_slot_ci": [
+     0.49375,
+     0.58125
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.05,
+    "swap_flip": 0.05,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5125,
+    "first_slot_ci": [
+     0.4875,
+     0.5375
+    ],
+    "items": 20,
+    "cells": 20
+   }
+  },
+  "twin": {
+   "pooled": {
+    "repeat_flip": 0.010416666666666666,
+    "swap_flip": 0.7395833333333334,
+    "order_effect": 0.7291666666666667,
+    "order_effect_ci": [
+     0.375,
+     0.9791666666666666
+    ],
+    "first_slot": 0.8697916666666666,
+    "first_slot_ci": [
+     0.6875,
+     0.9947916666666666
+    ],
+    "items": 8,
+    "cells": 24
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.03125,
+    "swap_flip": 0.71875,
+    "order_effect": 0.6875,
+    "order_effect_ci": [
+     0.375,
+     0.9375
+    ],
+    "first_slot": 0.859375,
+    "first_slot_ci": [
+     0.6875,
+     0.984375
+    ],
+    "items": 8,
+    "cells": 8
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.75,
+    "order_effect": 0.75,
+    "order_effect_ci": [
+     0.375,
+     1.0
+    ],
+    "first_slot": 0.875,
+    "first_slot_ci": [
+     0.6875,
+     1.0
+    ],
+    "items": 8,
+    "cells": 8
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.75,
+    "order_effect": 0.75,
+    "order_effect_ci": [
+     0.375,
+     1.0
+    ],
+    "first_slot": 0.875,
+    "first_slot_ci": [
+     0.6875,
+     1.0
+    ],
+    "items": 8,
+    "cells": 8
+   }
+  },
+  "clear": {
+   "pooled": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.0,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.5,
+     0.5
+    ],
+    "items": 8,
+    "cells": 24
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.0,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.5,
+     0.5
+    ],
+    "items": 8,
+    "cells": 8
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.0,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.5,
+     0.5
+    ],
+    "items": 8,
+    "cells": 8
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.0,
+    "swap_flip": 0.0,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.5,
+     0.5
+    ],
+    "items": 8,
+    "cells": 8
+   }
+  }
+ },
+ "close_by_domain": {
+  "hire": {
+   "repeat_flip": 0.016666666666666666,
+   "swap_flip": 0.016666666666666666,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.49166666666666664,
+   "first_slot_ci": [
+    0.475,
+    0.5
+   ],
+   "items": 5,
+   "cells": 15
+  },
+  "supplier": {
+   "repeat_flip": 0.1,
+   "swap_flip": 0.15,
+   "order_effect": 0.04999999999999999,
+   "order_effect_ci": [
+    0.011111111111111112,
+    0.09444444444444443
+   ],
+   "first_slot": 0.48333333333333334,
+   "first_slot_ci": [
+    0.43333333333333335,
+    0.5333333333333333
+   ],
+   "items": 5,
+   "cells": 15
+  },
+  "project": {
+   "repeat_flip": 0.03333333333333333,
+   "swap_flip": 0.03333333333333333,
+   "order_effect": 0.0,
+   "order_effect_ci": [
+    0.0,
+    0.0
+   ],
+   "first_slot": 0.5166666666666667,
+   "first_slot_ci": [
+    0.5,
+    0.55
+   ],
+   "items": 5,
+   "cells": 15
+  },
+  "draft": {
+   "repeat_flip": 0.1388888888888889,
+   "swap_flip": 0.25833333333333336,
+   "order_effect": 0.11944444444444446,
+   "order_effect_ci": [
+    0.02777777777777778,
+    0.23333333333333334
+   ],
+   "first_slot": 0.44166666666666665,
+   "first_slot_ci": [
+    0.35,
+    0.5333333333333333
+   ],
+   "items": 5,
+   "cells": 15
+  }
+ },
+ "close_classes": {
+  "claude-haiku-5-5": {
+   "stable": 14,
+   "follows_second": 2,
+   "mixed": 4
+  },
+  "all": {
+   "stable": 52,
+   "follows_second": 2,
+   "mixed": 4,
+   "follows_first": 2
+  },
+  "claude-opus-5-5": {
+   "stable": 20
+  },
+  "claude-sonnet-5-5": {
+   "follows_first": 2,
+   "stable": 18
+  }
+ },
+ "close_cells": [
+  {
+   "model": "claude-haiku-5-5",
+   "item": "draft-1",
+   "class": "stable",
+   "ab": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "draft-2",
+   "class": "follows_second",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "draft-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "draft-4",
+   "class": "mixed",
+   "ab": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "draft-5",
+   "class": "follows_second",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "hire-1",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "hire-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "hire-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "hire-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "hire-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "project-1",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "project-2",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "project-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "project-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "project-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "vendor-1",
+   "class": "mixed",
+   "ab": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "ba": [
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "vendor-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "vendor-3",
+   "class": "mixed",
+   "ab": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "vendor-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "item": "vendor-5",
+   "class": "mixed",
+   "ab": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "draft-1",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "draft-2",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "draft-3",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "draft-4",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "draft-5",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "hire-1",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "hire-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "hire-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "hire-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "hire-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "project-1",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "project-2",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "project-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "project-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "project-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "vendor-1",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "vendor-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "vendor-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "vendor-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-opus-5-5",
+   "item": "vendor-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "draft-1",
+   "class": "follows_first",
+   "ab": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "ba": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "draft-2",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "draft-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "draft-4",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "draft-5",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "hire-1",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "hire-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "hire-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "hire-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "hire-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "project-1",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "project-2",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "project-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "project-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "project-5",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "vendor-1",
+   "class": "follows_first",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "vendor-2",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "vendor-3",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "vendor-4",
+   "class": "stable",
+   "ab": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ba": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "item": "vendor-5",
+   "class": "stable",
+   "ab": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ba": [
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ ],
+ "clear_wrong": {
+  "claude-haiku-5-5": {
+   "wrong": 0,
+   "of": 64
+  },
+  "all": {
+   "wrong": 0,
+   "of": 192
+  },
+  "claude-sonnet-5-5": {
+   "wrong": 0,
+   "of": 64
+  },
+  "claude-opus-5-5": {
+   "wrong": 0,
+   "of": 64
+  }
+ },
+ "clear_wrong_list": [],
+ "twin_flagged": {
+  "claude-haiku-5-5": {
+   "flagged": 59,
+   "of": 64
+  },
+  "all": {
+   "flagged": 169,
+   "of": 192
+  },
+  "claude-sonnet-5-5": {
+   "flagged": 63,
+   "of": 64
+  },
+  "claude-opus-5-5": {
+   "flagged": 47,
+   "of": 64
+  }
+ },
+ "close_flagged": {
+  "claude-haiku-5-5": {
+   "flagged": 8,
+   "of": 160
+  },
+  "all": {
+   "flagged": 21,
+   "of": 480
+  },
+  "class:stable": {
+   "flagged": 16,
+   "of": 416
+  },
+  "class:mixed": {
+   "flagged": 1,
+   "of": 32
+  },
+  "class:follows_second": {
+   "flagged": 4,
+   "of": 16
+  },
+  "claude-sonnet-5-5": {
+   "flagged": 8,
+   "of": 160
+  },
+  "class:follows_first": {
+   "flagged": 0,
+   "of": 16
+  },
+  "claude-opus-5-5": {
+   "flagged": 5,
+   "of": 160
+  }
+ },
+ "arms": {
+  "plain_2reps": {
+   "pooled": {
+    "repeat_flip": 0.05,
+    "swap_flip": 0.08333333333333333,
+    "order_effect": 0.033333333333333326,
+    "order_effect_ci": [
+     0.0,
+     0.08333333333333333
+    ],
+    "first_slot": 0.475,
+    "first_slot_ci": [
+     0.44583333333333336,
+     0.5
+    ],
+    "items": 20,
+    "cells": 60
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.075,
+    "swap_flip": 0.175,
+    "order_effect": 0.09999999999999999,
+    "order_effect_ci": [
+     0.0,
+     0.25
+    ],
+    "first_slot": 0.4125,
+    "first_slot_ci": [
+     0.3375,
+     0.475
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.05,
+    "swap_flip": 0.05,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.525,
+    "first_slot_ci": [
+     0.5,
+     0.5625
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.025,
+    "swap_flip": 0.025,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.4875,
+    "first_slot_ci": [
+     0.4625,
+     0.5
+    ],
+    "items": 20,
+    "cells": 20
+   }
+  },
+  "tie_ok": {
+   "pooled": {
+    "repeat_flip": 0.07142857142857142,
+    "swap_flip": 0.09821428571428571,
+    "order_effect": 0.026785714285714288,
+    "order_effect_ci": [
+     -0.01818181818181818,
+     0.0847457627118644
+    ],
+    "first_slot": 0.49107142857142855,
+    "first_slot_ci": [
+     0.4568452380952381,
+     0.5287356321839081
+    ],
+    "items": 20,
+    "cells": 56
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.13157894736842105,
+    "swap_flip": 0.15789473684210525,
+    "order_effect": 0.02631578947368421,
+    "order_effect_ci": [
+     -0.07894736842105263,
+     0.15789473684210525
+    ],
+    "first_slot": 0.4342105263157895,
+    "first_slot_ci": [
+     0.3684210526315789,
+     0.4868421052631579
+    ],
+    "items": 19,
+    "cells": 19
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.058823529411764705,
+    "swap_flip": 0.058823529411764705,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.45098039215686275,
+     0.5490196078431373
+    ],
+    "items": 17,
+    "cells": 17
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.025,
+    "swap_flip": 0.075,
+    "order_effect": 0.049999999999999996,
+    "order_effect_ci": [
+     0.0,
+     0.15
+    ],
+    "first_slot": 0.5375,
+    "first_slot_ci": [
+     0.5,
+     0.6
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "clear_wrong": {
+    "wrong": 0,
+    "of": 96
+   },
+   "too_close": {
+    "close/claude-haiku-5-5": {
+     "said": 2,
+     "of": 80
+    },
+    "close/all": {
+     "said": 11,
+     "of": 240
+    },
+    "clear/claude-haiku-5-5": {
+     "said": 0,
+     "of": 32
+    },
+    "clear/all": {
+     "said": 0,
+     "of": 96
+    },
+    "close/claude-sonnet-5-5": {
+     "said": 9,
+     "of": 80
+    },
+    "clear/claude-sonnet-5-5": {
+     "said": 0,
+     "of": 32
+    },
+    "close/claude-opus-5-5": {
+     "said": 0,
+     "of": 80
+    },
+    "clear/claude-opus-5-5": {
+     "said": 0,
+     "of": 32
+    }
+   },
+   "pooled_counting_ties": {
+    "repeat_flip": 0.10833333333333334,
+    "swap_flip": 0.15833333333333333,
+    "order_effect": 0.04999999999999999,
+    "order_effect_ci": [
+     -0.008333333333333333,
+     0.11666666666666667
+    ],
+    "first_slot": 0.0,
+    "first_slot_ci": [
+     0.0,
+     0.0
+    ],
+    "items": 20,
+    "cells": 60
+   }
+  },
+  "score_first": {
+   "pooled": {
+    "repeat_flip": 0.03333333333333333,
+    "swap_flip": 0.06666666666666667,
+    "order_effect": 0.03333333333333333,
+    "order_effect_ci": [
+     0.0,
+     0.08333333333333333
+    ],
+    "first_slot": 0.5083333333333333,
+    "first_slot_ci": [
+     0.4791666666666667,
+     0.5375
+    ],
+    "items": 20,
+    "cells": 60
+   },
+   "claude-haiku-5-5": {
+    "repeat_flip": 0.025,
+    "swap_flip": 0.075,
+    "order_effect": 0.049999999999999996,
+    "order_effect_ci": [
+     0.0,
+     0.15
+    ],
+    "first_slot": 0.4875,
+    "first_slot_ci": [
+     0.425,
+     0.5375
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-sonnet-5-5": {
+    "repeat_flip": 0.05,
+    "swap_flip": 0.05,
+    "order_effect": 0.0,
+    "order_effect_ci": [
+     0.0,
+     0.0
+    ],
+    "first_slot": 0.5,
+    "first_slot_ci": [
+     0.4625,
+     0.5375
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "claude-opus-5-5": {
+    "repeat_flip": 0.025,
+    "swap_flip": 0.075,
+    "order_effect": 0.049999999999999996,
+    "order_effect_ci": [
+     0.0,
+     0.15
+    ],
+    "first_slot": 0.5375,
+    "first_slot_ci": [
+     0.5,
+     0.6
+    ],
+    "items": 20,
+    "cells": 20
+   },
+   "clear_wrong": {
+    "wrong": 0,
+    "of": 96
+   },
+   "too_close": {
+    "close/claude-haiku-5-5": {
+     "said": 0,
+     "of": 80
+    },
+    "close/all": {
+     "said": 0,
+     "of": 240
+    },
+    "clear/claude-haiku-5-5": {
+     "said": 0,
+     "of": 32
+    },
+    "clear/all": {
+     "said": 0,
+     "of": 96
+    },
+    "close/claude-sonnet-5-5": {
+     "said": 0,
+     "of": 80
+    },
+    "clear/claude-sonnet-5-5": {
+     "said": 0,
+     "of": 32
+    },
+    "close/claude-opus-5-5": {
+     "said": 0,
+     "of": 80
+    },
+    "clear/claude-opus-5-5": {
+     "said": 0,
+     "of": 32
+    }
+   }
+  }
+ },
+ "effort": {
+  "default": {
+   "repeat_flip": 0.06666666666666667,
+   "swap_flip": 0.1,
+   "order_effect": 0.03333333333333334,
+   "order_effect_ci": [
+    0.0,
+    0.08333333333333333
+   ],
+   "first_slot": 0.5333333333333333,
+   "first_slot_ci": [
+    0.4916666666666667,
+    0.5833333333333333
+   ],
+   "items": 20,
+   "cells": 20,
+   "thinking_tokens": 265,
+   "cost_per_call": 0.012,
+   "seconds": 16.1
+  },
+  "low": {
+   "repeat_flip": 0.1,
+   "swap_flip": 0.1388888888888889,
+   "order_effect": 0.03888888888888889,
+   "order_effect_ci": [
+    -0.016666666666666666,
+    0.1
+   ],
+   "first_slot": 0.4916666666666667,
+   "first_slot_ci": [
+    0.4333333333333333,
+    0.55
+   ],
+   "items": 20,
+   "cells": 20,
+   "thinking_tokens": 114,
+   "cost_per_call": 0.0107,
+   "seconds": 13.3
+  },
+  "xhigh": {
+   "repeat_flip": 0.05,
+   "swap_flip": 0.04444444444444444,
+   "order_effect": -0.005555555555555564,
+   "order_effect_ci": [
+    -0.016666666666666656,
+    0.0
+   ],
+   "first_slot": 0.5,
+   "first_slot_ci": [
+    0.475,
+    0.525
+   ],
+   "items": 20,
+   "cells": 20,
+   "thinking_tokens": 632,
+   "cost_per_call": 0.0158,
+   "seconds": 16.2
+  }
+ },
+ "five": {
+  "claude-haiku-5-5": {
+   "n": 60,
+   "slots": [
+    0.2833333333333333,
+    0.16666666666666666,
+    0.15,
+    0.18333333333333332,
+    0.21666666666666667
+   ]
+  },
+  "claude-sonnet-5-5": {
+   "n": 60,
+   "slots": [
+    0.25,
+    0.2,
+    0.21666666666666667,
+    0.16666666666666666,
+    0.16666666666666666
+   ]
+  },
+  "claude-opus-5-5": {
+   "n": 60,
+   "slots": [
+    0.2,
+    0.2,
+    0.16666666666666666,
+    0.23333333333333334,
+    0.2
+   ]
+  },
+  "all": {
+   "n": 180,
+   "slots": [
+    0.24444444444444444,
+    0.18888888888888888,
+    0.17777777777777778,
+    0.19444444444444445,
+    0.19444444444444445
+   ]
+  },
+  "first_slot_ci": [
+   0.2,
+   0.3
+  ],
+  "top_option_share": {
+   "five-hire-1": {
+    "claude-haiku-5-5": {
+     "option": "Rachel Dunn",
+     "share": 1.0
+    },
+    "claude-sonnet-5-5": {
+     "option": "Rachel Dunn",
+     "share": 1.0
+    },
+    "claude-opus-5-5": {
+     "option": "Rachel Dunn",
+     "share": 1.0
+    },
+    "all": {
+     "option": "Rachel Dunn",
+     "share": 1.0
+    }
+   },
+   "five-hire-2": {
+    "claude-haiku-5-5": {
+     "option": "Adam Lister",
+     "share": 1.0
+    },
+    "claude-sonnet-5-5": {
+     "option": "Ethan Marsh",
+     "share": 0.8
+    },
+    "claude-opus-5-5": {
+     "option": "Ethan Marsh",
+     "share": 1.0
+    },
+    "all": {
+     "option": "Ethan Marsh",
+     "share": 0.6
+    }
+   },
+   "five-project-1": {
+    "claude-haiku-5-5": {
+     "option": "Line 3 automation",
+     "share": 1.0
+    },
+    "claude-sonnet-5-5": {
+     "option": "Line 3 automation",
+     "share": 1.0
+    },
+    "claude-opus-5-5": {
+     "option": "Line 3 automation",
+     "share": 1.0
+    },
+    "all": {
+     "option": "Line 3 automation",
+     "share": 1.0
+    }
+   },
+   "five-project-2": {
+    "claude-haiku-5-5": {
+     "option": "Damp sensors",
+     "share": 0.6
+    },
+    "claude-sonnet-5-5": {
+     "option": "Rent arrears analytics",
+     "share": 0.8
+    },
+    "claude-opus-5-5": {
+     "option": "Asset data clean-up",
+     "share": 1.0
+    },
+    "all": {
+     "option": "Asset data clean-up",
+     "share": 0.4666666666666667
+    }
+   },
+   "five-vendor-1": {
+    "claude-haiku-5-5": {
+     "option": "Marlin Ledger",
+     "share": 0.6
+    },
+    "claude-sonnet-5-5": {
+     "option": "Marlin Ledger",
+     "share": 1.0
+    },
+    "claude-opus-5-5": {
+     "option": "Marlin Ledger",
+     "share": 1.0
+    },
+    "all": {
+     "option": "Marlin Ledger",
+     "share": 0.8666666666666667
+    }
+   },
+   "five-vendor-2": {
+    "claude-haiku-5-5": {
+     "option": "Northgate IT",
+     "share": 0.6
+    },
+    "claude-sonnet-5-5": {
+     "option": "Northgate IT",
+     "share": 0.5
+    },
+    "claude-opus-5-5": {
+     "option": "Redkite",
+     "share": 0.8
+    },
+    "all": {
+     "option": "Northgate IT",
+     "share": 0.43333333333333335
+    }
+   }
+  }
+ },
+ "swap_test": {
+  "close": {
+   "disagree": 0.11458333333333333,
+   "cells": 60
+  },
+  "close:stable": {
+   "disagree": 0.03365384615384615,
+   "cells": 52
+  },
+  "close:mixed": {
+   "disagree": 0.5,
+   "cells": 4
+  },
+  "close:follows_second": {
+   "disagree": 0.875,
+   "cells": 2
+  },
+  "twin": {
+   "disagree": 0.7395833333333334,
+   "cells": 24
+  },
+  "clear": {
+   "disagree": 0.0,
+   "cells": 24
+  },
+  "close:follows_first": {
+   "disagree": 0.6875,
+   "cells": 2
+  }
+ }
+}

@@ -126,3 +126,23 @@ shortlists, I expect the first slot to do somewhat better than 20%, but below 30
 ## Deviations
 
 Any change after the first main-run call is listed here with its reason.
+
+1. **Short names (found after the main run, before any other run).** The parser wanted the full
+   name of an option, and 14 main-run replies wrote `Pick: Rowan` for "Project Rowan" and the like,
+   all on the two project twins. This is a parsing failure of the kind the procedure allows me to
+   correct. `read_pick` now also accepts a word that only one option's name contains, with a test,
+   and `analyze.py` reads every stored reply again with it. No judgement changed.
+
+2. **Neutral labels on the drafts (added after every registered run, before any of these calls).**
+   Drafts are labelled by position, so "Draft 2" is always the draft read last. Haiku favoured the
+   second draft on close items, and that could be either the position or the label. `neutral_labels`
+   reruns the five close drafts on Haiku and Sonnet, four replies per order, calling them "Draft
+   Maple" and "Draft Rowan", names that stay with the text. Exploratory. What I expect, written
+   before the first call: the lean towards the last draft mostly survives, because I think it's the
+   position and not the label.
+
+3. **Comparisons added after the registered analysis.** Two flip rates in `analyze.py` were not
+   registered, and are labelled exploratory wherever they're reported: how often two replies from
+   different models differ, and how often a reply with a closing line differs from a plain reply to
+   the same order. Replies mentioning the order and today's date are also counted, because reading
+   the replies turned both up.

@@ -113,8 +113,20 @@ class Reading(unittest.TestCase):
         self.assertEqual(choose.read_pick("Draft 1", self.draft, [1, 0]), (1, 0))
         self.assertEqual(choose.read_pick("Draft 2", self.draft, [1, 0]), (0, 1))
 
+    def test_neutral_labels_stay_with_the_text(self):
+        self.assertEqual(choose.read_pick("Draft Rowan", self.draft, [1, 0], "neutral_labels"), (1, 0))
+        self.assertEqual(choose.read_pick("Draft Rowan", self.draft, [0, 1], "neutral_labels"), (1, 1))
+        msg = choose.message(self.draft, [1, 0], "neutral_labels")
+        self.assertIn("Draft Rowan\n" + self.draft["options"][1]["text"], msg)
+
     def test_too_close(self):
         self.assertEqual(choose.read_pick("too close", self.item, [0, 1]), ("tie", None))
+
+    def test_short_name_maps_to_its_option(self):
+        twin = next(i for i in ITEMS if i["id"] == "project-t2")
+        self.assertEqual(choose.read_pick("Rowan", twin, [1, 0]), (1, 0))
+        self.assertEqual(choose.read_pick("Alder", twin, [0, 1]), (0, 0))
+        self.assertEqual(choose.read_pick("Project", twin, [0, 1]), (None, None))
 
     def test_naming_both_is_unreadable(self):
         self.assertEqual(choose.read_pick("Anna Clarke or Emma Turner", self.item, [0, 1]), (None, None))

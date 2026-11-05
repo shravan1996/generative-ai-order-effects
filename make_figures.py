@@ -113,7 +113,7 @@ def reading_rule():
     rows = [
         ("Matched CVs, May 2025 (Rozado)",
          "22 models chose between two CVs for a job. The first-listed candidate got 63.5% of picks, and 21 of the "
-         "22 leaned that way. No right answer. Claude 3.5 Sonnet was the Claude in the test."),
+         "22 leaned that way. No right answer. Claude 3.5 Sonnet was among the models."),
         ("Colours and CVs, June 2025 onward (Yin and colleagues)",
          "Options built to be close. Strong order effects that changed with quality: the first option among good "
          "ones, a later one among poor ones. No right answer. The newest Claude was Sonnet 4."),
@@ -152,7 +152,7 @@ def what_moved(s):
     x0, x1, top = 300, 616, svg.y
     maxv = 35.0
     scale = lambda v: x0 + (x1 - x0) * v / maxv
-    svg.text(32, top, "sans label", "WHAT CHANGED BETWEEN THE TWO REPLIES")
+    svg.text(32, top, "sans label", "WHAT CHANGED")
     svg.text(x0, top, "sans label", "CHOSE DIFFERENTLY")
     y = top + 16
     for tick in (0, 10, 20, 30):

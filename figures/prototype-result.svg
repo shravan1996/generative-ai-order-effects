@@ -20,7 +20,7 @@
   <text class="sans sub" x="32.0" y="72.0">How often two replies chose differently, on 20 close calls and three</text>
   <text class="sans sub" x="32.0" y="92.0">Claude models. Lines show 95% intervals over the 20 decisions.</text>
   <line x1="32.0" y1="112.0" x2="648.0" y2="112.0" stroke="#D3DBD7" stroke-width="1"/>
-  <text class="sans label" x="32.0" y="140.0">WHAT CHANGED BETWEEN THE TWO REPLIES</text>
+  <text class="sans label" x="32.0" y="140.0">WHAT CHANGED</text>
   <text class="sans label" x="300.0" y="140.0">CHOSE DIFFERENTLY</text>
   <line x1="300.0" y1="156.0" x2="300.0" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>
   <line x1="390.3" y1="156.0" x2="390.3" y2="328.0" stroke="#D3DBD7" stroke-width="1"/>

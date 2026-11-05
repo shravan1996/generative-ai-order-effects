@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="637" viewBox="0 0 680 637" role="img" aria-labelledby="title desc">
   <title id="title">Four order studies, four different jobs</title>
-  <desc id="desc">Matched CVs, May 2025 (Rozado): 22 models chose between two CVs for a job. The first-listed candidate got 63.5% of picks, and 21 of the 22 leaned that way. No right answer. Claude 3.5 Sonnet was the Claude in the test. Colours and CVs, June 2025 onward (Yin and colleagues): Options built to be close. Strong order effects that changed with quality: the first option among good ones, a later one among poor ones. No right answer. The newest Claude was Sonnet 4. Agents booking hotels, August 2026 (Wadi and Ma): 7,000 sessions picking from 100 listings. Position mattered less as reasoning effort rose, and Claude Sonnet 5 at high effort showed no detectable effect. GPT 6 Luna showed one at every level. Exam questions, October 2026 (Li and colleagues): The right answer was forced into one slot of a multiple-choice test. The largest gap was about 4 points for GPT-5.2 and DeepSeek-V4, against about 21 for the smallest model. Thinking models were &quot;nearly immune&quot;. There is an answer key here, and no Claude. None of these asked a current Claude to make a close workplace call, which is the gap my trial tries to fill.</desc>
+  <desc id="desc">Matched CVs, May 2025 (Rozado): 22 models chose between two CVs for a job. The first-listed candidate got 63.5% of picks, and 21 of the 22 leaned that way. No right answer. Claude 3.5 Sonnet was among the models. Colours and CVs, June 2025 onward (Yin and colleagues): Options built to be close. Strong order effects that changed with quality: the first option among good ones, a later one among poor ones. No right answer. The newest Claude was Sonnet 4. Agents booking hotels, August 2026 (Wadi and Ma): 7,000 sessions picking from 100 listings. Position mattered less as reasoning effort rose, and Claude Sonnet 5 at high effort showed no detectable effect. GPT 6 Luna showed one at every level. Exam questions, October 2026 (Li and colleagues): The right answer was forced into one slot of a multiple-choice test. The largest gap was about 4 points for GPT-5.2 and DeepSeek-V4, against about 21 for the smallest model. Thinking models were &quot;nearly immune&quot;. There is an answer key here, and no Claude. None of these asked a current Claude to make a close workplace call, which is the gap my trial tries to fill.</desc>
   <style>
     text { stroke: none; }
     .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
@@ -25,7 +25,7 @@
   <text class="sans cell" x="238.0" y="140.0">22 models chose between two CVs for a job. The</text>
   <text class="sans cell" x="238.0" y="159.0">first-listed candidate got 63.5% of picks, and 21 of the</text>
   <text class="sans cell" x="238.0" y="178.0">22 leaned that way. No right answer. Claude 3.5 Sonnet</text>
-  <text class="sans cell" x="238.0" y="197.0">was the Claude in the test.</text>
+  <text class="sans cell" x="238.0" y="197.0">was among the models.</text>
   <line x1="32.0" y1="220.0" x2="648.0" y2="220.0" stroke="#D3DBD7" stroke-width="1"/>
   <text class="sans rowb" x="32.0" y="246.0">Colours and CVs, June</text>
   <text class="sans rowb" x="32.0" y="266.0">2025 onward (Yin and</text>

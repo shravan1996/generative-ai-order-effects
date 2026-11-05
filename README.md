@@ -56,7 +56,7 @@ What the pre-registered questions came to (`PREREGISTRATION.md`):
    and cost per call $0.0107, $0.0120 and $0.0158 as the CLI reports it.
 6. **H6, shortlists favour the top: failed.** The first of five slots got 24.4% of picks (20.0 to
    30.0), with 18.9, 17.8, 19.4 and 19.4 for the rest. Several of my "nearly equal" shortlists weren't:
-   Rachel Dunn won 60 of 60 from all five positions, and Line 3 automation did too.
+   Rachel Dunn won 30 of 30 from all five positions, and Line 3 automation did too.
 
 Exploratory, added after the results (deviations 2 and 3):
 

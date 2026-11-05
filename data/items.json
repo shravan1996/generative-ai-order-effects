@@ -1,0 +1,788 @@
+[
+ {
+  "id": "hire-1",
+  "domain": "hire",
+  "tier": "close",
+  "ask": "I'm hiring an operations analyst for a 60-person freight company in Leeds. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Anna Clarke",
+    "text": "Operations analyst at Pennine Haulage (140 vehicles), 7 years\nBuilt the weekly on-time report the directors still use; cut failed deliveries by 9%\nExcel and basic SQL. No degree.\nNotice period: 3 months"
+   },
+   {
+    "name": "Emma Turner",
+    "text": "Data analyst at Routewise, a logistics software firm, 3 years\nMSc in Operational Research; built a routing model that cut fuel use by 6% in a pilot\nPython and SQL. Has never worked in a depot.\nNotice period: 4 weeks"
+   }
+  ]
+ },
+ {
+  "id": "hire-2",
+  "domain": "hire",
+  "tier": "close",
+  "ask": "I'm hiring a customer success manager for a 25-person software company that sells to dental practices. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Daniel Moss",
+    "text": "Account manager at Northern Dental Supplies, 6 years\nLooks after 210 practices across the North West; 91% renewal on a £400k book\nKnows most practice managers in the region by name\nHas never worked for a software company"
+   },
+   {
+    "name": "Thomas Reed",
+    "text": "Customer success manager at Peoplebase, an HR software firm, 4 years\n88% renewal on a £1.1m book; ran onboarding for 140 new customers\nComfortable with product teams and usage data\nHas never sold to healthcare"
+   }
+  ]
+ },
+ {
+  "id": "hire-3",
+  "domain": "hire",
+  "tier": "close",
+  "ask": "I'm hiring a finance manager for a charity with £6m annual income. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Priya Nair",
+    "text": "Audit manager at Whitmore & Co, 8 years\nACA qualified; has audited more than 20 charities and knows the SORP well\nLed audit teams on site, but has never run an in-house finance function\nWould take a 10% pay cut to move"
+   },
+   {
+    "name": "Meera Iyer",
+    "text": "Finance lead at Harbour Trust, a £3m charity, 9 years\nRuns a team of three; moved the accounts to Xero and brought month end down to 6 days\nCIMA part-qualified, with the final exam next spring\nWould need a small pay rise to move"
+   }
+  ]
+ },
+ {
+  "id": "hire-4",
+  "domain": "hire",
+  "tier": "close",
+  "ask": "I'm hiring a junior marketer for a 12-person furniture brand. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Kwame Mensah",
+    "text": "Paid social executive at Fold Agency, 2 years\nManaged £30k a month in ads across four clients; best account returned 3.2 times spend\nGood with numbers and reporting\nOnly short writing samples, mostly ad copy"
+   },
+   {
+    "name": "Kofi Boateng",
+    "text": "Content executive at Homeward, a homeware retailer, 2 years\nGrew the newsletter from 8,000 to 31,000 subscribers; wrote all the product copy\nStrong portfolio and good eye for photography\nHas never run paid ads"
+   }
+  ]
+ },
+ {
+  "id": "hire-5",
+  "domain": "hire",
+  "tier": "close",
+  "ask": "I'm hiring a head of IT for a 300-person housing association. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Sofia Rossi",
+    "text": "IT manager at Greenfield Homes, a 200-person housing association, 14 years\nLed the move to Microsoft 365 on time and under budget; runs a team of six\nKnows the sector's housing management systems well\nNo formal security background"
+   },
+   {
+    "name": "Elena Conti",
+    "text": "Security lead at Marlowe Bank, 11 years in IT\nCISSP; led the bank's ISO 27001 certification\nHas run projects worth up to £200k, but never a helpdesk or a full IT budget\nNew to housing"
+   }
+  ]
+ },
+ {
+  "id": "vendor-1",
+  "domain": "supplier",
+  "tier": "close",
+  "ask": "We're a 180-person manufacturer in Stoke choosing payroll software. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Ledgerline",
+    "text": "£1,950 a month, with a further £150 a month for the pensions module\nLive in 2 weeks\nUK phone support, 9 to 5\n12-month contract"
+   },
+   {
+    "name": "PayHarbour",
+    "text": "£1,620 a month, pensions included\nLive in 7 weeks\nEmail support only, replies within one working day\n12-month contract"
+   }
+  ]
+ },
+ {
+  "id": "vendor-2",
+  "domain": "supplier",
+  "tier": "close",
+  "ask": "We need a cleaning contract for our 40-desk office in Bristol. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "BrightDesk",
+    "text": "£2,300 a month for five evenings a week\nSame named cleaner each evening; four client references, all over 3 years\n12-month lock-in\nNo cover guarantee in school holidays"
+   },
+   {
+    "name": "Cleanway",
+    "text": "£1,980 a month for five evenings a week\nRotating staff from a local team; two client references, both under a year\n3-month notice period\nGuaranteed cover all year"
+   }
+  ]
+ },
+ {
+  "id": "vendor-3",
+  "domain": "supplier",
+  "tier": "close",
+  "ask": "We ship about 900 parcels a month from our warehouse in Coventry. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Swiftline",
+    "text": "£4.60 a parcel\n98% next-day delivery in the last year\nCollection at 3pm\nClaims for lost parcels take up to 30 days"
+   },
+   {
+    "name": "Carrow Parcels",
+    "text": "£3.95 a parcel\n94% next-day delivery in the last year\nCollection at 5pm\nClaims for lost parcels are settled in 5 days"
+   }
+  ]
+ },
+ {
+  "id": "vendor-4",
+  "domain": "supplier",
+  "tier": "close",
+  "ask": "Our 20-person sales team needs a CRM. Nobody here has time to administer one. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Pipewell",
+    "text": "£45 a user a month\nEverything is configurable, with a strong reporting tool\nNeeds about 6 weeks of setup, or a £4,000 partner to do it\nThree of our sales team have used it before"
+   },
+   {
+    "name": "Quickdeal",
+    "text": "£28 a user a month\nWorks out of the box in a few days\nReports are fixed, with limited custom fields\nNo one here has used it"
+   }
+  ]
+ },
+ {
+  "id": "vendor-5",
+  "domain": "supplier",
+  "tier": "close",
+  "ask": "We need our product manuals translated into German and French, about 60,000 words a year. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Lingua North",
+    "text": "£0.16 a word\nHuman translators throughout, with a named engineer who reviews the technical terms\n10 working days per manual\nHas worked with two of our competitors"
+   },
+   {
+    "name": "Parlance AI",
+    "text": "£0.07 a word\nMachine translation with a human review pass\n3 working days per manual\nNo named reviewer, and terms are managed through a shared glossary"
+   }
+  ]
+ },
+ {
+  "id": "project-1",
+  "domain": "project",
+  "tier": "close",
+  "ask": "We run 40 garden centres. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Self-checkout pilot",
+    "text": "Costs £180k, in 6 stores\nExpected payback: 14 months\nSaves queue time at weekends, but staff are nervous about it\nRisk: shrinkage could rise"
+   },
+   {
+    "name": "Stock forecasting",
+    "text": "Costs £120k, across all stores\nExpected payback: 22 months\nShould cut plant waste by about a fifth\nRisk: depends on five years of messy sales data"
+   }
+  ]
+ },
+ {
+  "id": "project-2",
+  "domain": "project",
+  "tier": "close",
+  "ask": "We're a 90-person accountancy firm. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Client portal",
+    "text": "Costs £95k\nClients have asked for it for two years, and two large ones say they may leave without it\nDoesn't save staff any time at first\nTakes 5 months"
+   },
+   {
+    "name": "Workpaper automation",
+    "text": "Costs £70k\nSaves each audit senior about 4 hours a week\nClients won't notice it\nTakes 3 months"
+   }
+  ]
+ },
+ {
+  "id": "project-3",
+  "domain": "project",
+  "tier": "close",
+  "ask": "We're a regional bus operator with 300 vehicles. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Live arrival app",
+    "text": "Costs £260k\nPassenger surveys rank it first, and it should lift ridership by about 2%\nNeeds new trackers on every bus\nTakes 8 months"
+   },
+   {
+    "name": "Depot charging plan",
+    "text": "Costs £210k\nNeeded before our first electric buses arrive in 2028, and unlocks a £1m grant if started this year\nPassengers won't see anything for two years\nTakes 10 months"
+   }
+  ]
+ },
+ {
+  "id": "project-4",
+  "domain": "project",
+  "tier": "close",
+  "ask": "We're a 200-person online retailer. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "New returns process",
+    "text": "Costs £60k\nReturns cost us £400k a year; this should cut that by about 20%\nMeans changes in the warehouse during peak\nTakes 4 months"
+   },
+   {
+    "name": "Product page rebuild",
+    "text": "Costs £110k\nTests suggest a 4% lift in conversion, on £18m of annual sales\nMarketing has wanted it for a long time\nTakes 6 months"
+   }
+  ]
+ },
+ {
+  "id": "project-5",
+  "domain": "project",
+  "tier": "close",
+  "ask": "We're a 70-bed care home group with four homes. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Digital care records",
+    "text": "Costs £85k\nInspectors have flagged our paper records twice\nSaves each carer about 30 minutes a shift, once they've learned it\nStaff training will take a quarter"
+   },
+   {
+    "name": "Agency staff reduction",
+    "text": "Costs £50k for a recruitment and retention programme\nAgency staff cost us £600k last year; the target is a 25% cut\nResidents would see more familiar faces\nResults may take a year to show"
+   }
+  ]
+ },
+ {
+  "id": "draft-1",
+  "domain": "draft",
+  "tier": "close",
+  "ask": "I need to tell our biggest client that their invoice is 45 days overdue. We've worked with them for six years, and their finance contact is new. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Sam,\n\nInvoice 4417 for £38,200 was due on 2 September and is now 45 days overdue. Please could you confirm a payment date by Friday? If something is blocking it, tell me and I'll help sort it out.\n\nThanks,\nJo"
+   },
+   {
+    "name": "second",
+    "text": "Hi Sam,\n\nWelcome to the team. I know taking over a ledger is never simple, so this may just have got lost in the handover. Invoice 4417 for £38,200 was due on 2 September. Could you let me know when we can expect it? Happy to send a copy or jump on a call.\n\nThanks,\nJo"
+   }
+  ]
+ },
+ {
+  "id": "draft-2",
+  "domain": "draft",
+  "tier": "close",
+  "ask": "A candidate reached our final round and didn't get the job. She was good, and I'd like her to apply again. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Leah,\n\nThank you for your time over the last few weeks. We've decided to offer the role to another candidate, who had more direct experience of running budgets. You impressed the panel, particularly on stakeholder work, and I'd be glad to hear from you when our next senior role opens in the spring.\n\nBest,\nRuth"
+   },
+   {
+    "name": "second",
+    "text": "Hi Leah,\n\nI'm sorry to say we won't be offering you the role. It was a close decision, and I wanted to tell you myself rather than by form letter. Can I call you this week to go through the panel's feedback? I'd really like to keep in touch.\n\nBest,\nRuth"
+   }
+  ]
+ },
+ {
+  "id": "draft-3",
+  "domain": "draft",
+  "tier": "close",
+  "ask": "I'm asking my director for £25k to hire a contractor for three months. She's busy and reads on her phone. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Claire,\n\nCan I have £25k for a three-month contractor? We're two people short on the billing migration, and the go-live in March will slip without one. I can start them on the 12th if you say yes by Friday.\n\nThanks,\nOmar"
+   },
+   {
+    "name": "second",
+    "text": "Hi Claire,\n\nThe billing migration is at risk: we've lost two people and the March go-live depends on the testing they were doing. I've looked at moving people from support, which would hurt response times, and at delaying, which costs us about £40k in extra licences. A three-month contractor at £25k looks like the cheapest way through. Could you approve this by Friday?\n\nThanks,\nOmar"
+   }
+  ]
+ },
+ {
+  "id": "draft-4",
+  "domain": "draft",
+  "tier": "close",
+  "ask": "Our order to a customer will be two weeks late because a supplier let us down. He's a small shop owner and it's his first order. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Martin,\n\nI'm sorry, your order will arrive two weeks late, on 18 November rather than 4 November. Our supplier missed a delivery, and that's our problem rather than yours. You can cancel for a full refund at any time, or keep the order and take 10% off.\n\nRegards,\nNadia"
+   },
+   {
+    "name": "second",
+    "text": "Hi Martin,\n\nI wanted to call this one out personally, because it's your first order with us and this isn't how we wanted to start. A supplier has let us down and your order is now due on 18 November. I know that's a real problem for a small shop. What would help most on your end? We can look at a refund, a discount or a part shipment.\n\nRegards,\nNadia"
+   }
+  ]
+ },
+ {
+  "id": "draft-5",
+  "domain": "draft",
+  "tier": "close",
+  "ask": "I'm telling my team that we're moving to three days a week in the office from January. Some of them won't like it. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi all,\n\nFrom January, we'll all be in the office on Tuesdays, Wednesdays and Thursdays. This has come from the leadership team and applies company-wide. If it causes you real difficulty, please talk to me this week and we'll work through it one to one.\n\nThanks,\nBen"
+   },
+   {
+    "name": "second",
+    "text": "Hi all,\n\nI have some news that I know won't be welcome for everyone. From January, we're moving to three days a week in the office. The reason given is that new starters have been struggling to learn the job remotely, and I think there's something in that. Let's use Thursday's meeting to talk about what would make this workable.\n\nThanks,\nBen"
+   }
+  ]
+ },
+ {
+  "id": "hire-t1",
+  "domain": "hire",
+  "tier": "twin",
+  "ask": "I'm hiring a payroll officer for a 400-person NHS trust supplier in Sheffield. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Hannah Cole",
+    "text": "Payroll officer at Calder Foods, 5 years\nRuns a monthly payroll for 650 staff; no late payments in the last three years\nCIPP Level 3 and advanced Excel\nNotice period: 1 month"
+   },
+   {
+    "name": "Laura Price",
+    "text": "Payroll officer at Calder Foods, 5 years\nRuns a monthly payroll for 650 staff; no late payments in the last three years\nCIPP Level 3 and advanced Excel\nNotice period: 1 month"
+   }
+  ]
+ },
+ {
+  "id": "hire-t2",
+  "domain": "hire",
+  "tier": "twin",
+  "ask": "I'm hiring a site manager for a 30-person construction firm in Cardiff. These are the last two CVs. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "James Fenn",
+    "text": "Assistant site manager at Bevan Build, 6 years\nDelivered four housing schemes of up to 40 units, none more than two weeks late\nSMSTS and first aid certificates are current\nNotice period: 4 weeks"
+   },
+   {
+    "name": "Mark Hale",
+    "text": "Assistant site manager at Bevan Build, 6 years\nDelivered four housing schemes of up to 40 units, none more than two weeks late\nSMSTS and first aid certificates are current\nNotice period: 4 weeks"
+   }
+  ]
+ },
+ {
+  "id": "vendor-t1",
+  "domain": "supplier",
+  "tier": "twin",
+  "ask": "We need a managed print contract for our three offices. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Inkwell Services",
+    "text": "£640 a month for 12 printers\nIncludes toner and repairs, with an engineer on site within 8 working hours\n36-month contract\nThree client references, all in professional services"
+   },
+   {
+    "name": "Tonerline",
+    "text": "£640 a month for 12 printers\nIncludes toner and repairs, with an engineer on site within 8 working hours\n36-month contract\nThree client references, all in professional services"
+   }
+  ]
+ },
+ {
+  "id": "vendor-t2",
+  "domain": "supplier",
+  "tier": "twin",
+  "ask": "We need a new phone system for 75 staff. We've narrowed it to two quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Callbridge",
+    "text": "£11.50 a user a month\nIncludes call recording and a Teams integration\nLive in 3 weeks\n24-month contract, with UK support on weekdays"
+   },
+   {
+    "name": "Voxway",
+    "text": "£11.50 a user a month\nIncludes call recording and a Teams integration\nLive in 3 weeks\n24-month contract, with UK support on weekdays"
+   }
+  ]
+ },
+ {
+  "id": "project-t1",
+  "domain": "project",
+  "tier": "twin",
+  "ask": "We're a 150-person insurance broker. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Project Heron",
+    "text": "Moves our renewals tracking off spreadsheets\nCosts £75k and takes 4 months\nSaves about 300 staff hours a month\nRisk: depends on one in-house developer"
+   },
+   {
+    "name": "Project Linnet",
+    "text": "Moves our renewals tracking off spreadsheets\nCosts £75k and takes 4 months\nSaves about 300 staff hours a month\nRisk: depends on one in-house developer"
+   }
+  ]
+ },
+ {
+  "id": "project-t2",
+  "domain": "project",
+  "tier": "twin",
+  "ask": "We're a chain of 25 dental practices. We can fund one of these two projects next quarter. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Project Alder",
+    "text": "Adds online booking and reminders to all practices\nCosts £90k and takes 5 months\nShould cut missed appointments by about 15%\nRisk: reception teams will need retraining"
+   },
+   {
+    "name": "Project Rowan",
+    "text": "Adds online booking and reminders to all practices\nCosts £90k and takes 5 months\nShould cut missed appointments by about 15%\nRisk: reception teams will need retraining"
+   }
+  ]
+ },
+ {
+  "id": "draft-t1",
+  "domain": "draft",
+  "tier": "twin",
+  "ask": "I'm letting staff know the car park will be closed for resurfacing next week. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi all,\n\nThe car park will be closed from Monday to Wednesday next week for resurfacing. Please use the Station Road car park instead; we'll cover the cost if you keep your tickets.\n\nThanks,\nAmy"
+   },
+   {
+    "name": "second",
+    "text": "Hi all,\n\nThe car park will be closed from Monday to Wednesday next week for resurfacing. Please use the Station Road car park instead; we'll pay the cost if you keep your tickets.\n\nThanks,\nAmy"
+   }
+  ]
+ },
+ {
+  "id": "draft-t2",
+  "domain": "draft",
+  "tier": "twin",
+  "ask": "I'm telling a customer that the replacement part they asked for has shipped. Here are two drafts. Which should I send?",
+  "better": null,
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Dan,\n\nYour replacement part shipped this morning and should reach you on Thursday. The tracking number is RX4471. Let me know if it doesn't turn up.\n\nThanks,\nTess"
+   },
+   {
+    "name": "second",
+    "text": "Hi Dan,\n\nYour replacement part went out this morning and should reach you on Thursday. The tracking number is RX4471. Let me know if it doesn't turn up.\n\nThanks,\nTess"
+   }
+  ]
+ },
+ {
+  "id": "hire-c1",
+  "domain": "hire",
+  "tier": "clear",
+  "ask": "I'm hiring a commercial HGV driver for a 40-person haulier. The job needs a Class 1 licence. These are the last two CVs. Who should get the offer?",
+  "better": "Liam Walsh",
+  "options": [
+   {
+    "name": "Liam Walsh",
+    "text": "HGV driver at Thornton Transport, 9 years\nClass 1 licence with no points; Driver CPC is current\nClean accident record for the last 5 years\nAvailable in 2 weeks"
+   },
+   {
+    "name": "Sean Doyle",
+    "text": "Van driver at Rapid Couriers, 3 years\nClass 2 licence only, with 6 points\nOne at-fault accident last year\nAvailable in 8 weeks"
+   }
+  ]
+ },
+ {
+  "id": "hire-c2",
+  "domain": "hire",
+  "tier": "clear",
+  "ask": "I'm hiring a senior bookkeeper for a 50-person architecture practice. These are the last two CVs. Who should get the offer?",
+  "better": "Aisha Khan",
+  "options": [
+   {
+    "name": "Aisha Khan",
+    "text": "Senior bookkeeper at Lyle Architects, 8 years\nAAT Level 4; runs Xero, VAT returns and project costing unaided\nReferences from two partners\nNotice period: 1 month"
+   },
+   {
+    "name": "Sana Malik",
+    "text": "Accounts assistant at a retail chain, 1 year\nStudying for AAT Level 2; has only used a bespoke sales ledger\nNo references provided\nNotice period: 3 months"
+   }
+  ]
+ },
+ {
+  "id": "vendor-c1",
+  "domain": "supplier",
+  "tier": "clear",
+  "ask": "We need a broadband line for our 30-person office in Hull. We've narrowed it to two quotes. Which should we sign?",
+  "better": "Fibrelane",
+  "options": [
+   {
+    "name": "Fibrelane",
+    "text": "£180 a month for 1 Gbps\nService guarantee: fixes within 6 hours, with credits if missed\n12-month contract\nRated 4.7 out of 5 by 800 business customers"
+   },
+   {
+    "name": "Netmoor",
+    "text": "£260 a month for 200 Mbps\nNo service guarantee; fixes in 2 to 5 working days\n36-month contract\nRated 2.1 out of 5 by 800 business customers"
+   }
+  ]
+ },
+ {
+  "id": "vendor-c2",
+  "domain": "supplier",
+  "tier": "clear",
+  "ask": "We need a fire safety inspection contract for our 12 shops. Our insurer requires a certified assessor. We've narrowed it to two quotes. Which should we sign?",
+  "better": "Beacon Fire",
+  "options": [
+   {
+    "name": "Beacon Fire",
+    "text": "£100 a shop each year\nBAFE-certified assessors\nWritten report within 5 days\nIncludes one follow-up visit"
+   },
+   {
+    "name": "QuickCheck Safety",
+    "text": "£150 a shop each year\nNot certified\nReport within 30 days\nFollow-up visits cost extra"
+   }
+  ]
+ },
+ {
+  "id": "project-c1",
+  "domain": "project",
+  "tier": "clear",
+  "ask": "We're a 120-person law firm. We can fund one of these two projects next quarter. Which one?",
+  "better": "Document system upgrade",
+  "options": [
+   {
+    "name": "Document system upgrade",
+    "text": "Costs £40k and takes 2 months\nOur current system goes out of support in June, which would breach our insurer's terms\nSaves about 200 staff hours a month\nLow risk: the supplier has done this for 30 similar firms"
+   },
+   {
+    "name": "Office plant refresh",
+    "text": "Costs £65k and takes 6 months\nNo business case beyond making reception look nicer\nSaves no time\nWould mean scaffolding in reception for a month"
+   }
+  ]
+ },
+ {
+  "id": "project-c2",
+  "domain": "project",
+  "tier": "clear",
+  "ask": "We run a 60-vehicle delivery fleet. We can fund one of these two projects next quarter. Which one?",
+  "better": "Telematics rollout",
+  "options": [
+   {
+    "name": "Telematics rollout",
+    "text": "Costs £50k, with payback in 9 months from fuel savings\nInsurer offers a further 12% discount once it's installed\nDrivers' union has already agreed to it\nTakes 2 months"
+   },
+   {
+    "name": "Branded fleet repaint",
+    "text": "Costs £140k, with no measurable payback\nTakes vehicles off the road for 3 days each\nDrivers' union hasn't been consulted\nTakes 9 months"
+   }
+  ]
+ },
+ {
+  "id": "draft-c1",
+  "domain": "draft",
+  "tier": "clear",
+  "ask": "I'm inviting customers to our webinar on Thursday 21 March at 2pm. The sign-up link is acme.example/webinar. Here are two drafts. Which should I send?",
+  "better": "second",
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi both,\n\nCan't remember if I told you lot about the thing we're doing in March?? It's a webinar, I think on the 14th, might be morning. Would be great if you came but no worries if not. Link to follow when I find it.\n\nCheers,\nPete"
+   },
+   {
+    "name": "second",
+    "text": "Hi both,\n\nWe're running a webinar on Thursday 21 March at 2pm, and I'd love you to join us. It takes 40 minutes, with time for questions at the end. You can sign up at acme.example/webinar.\n\nBest wishes,\nPete"
+   }
+  ]
+ },
+ {
+  "id": "draft-c2",
+  "domain": "draft",
+  "tier": "clear",
+  "ask": "I'm telling a client their project review has moved from Tuesday to Wednesday at 10am, because our lead has a clash. I shouldn't mention the lead's sick leave, which is confidential. Here are two drafts. Which should I send?",
+  "better": "first",
+  "options": [
+   {
+    "name": "first",
+    "text": "Hi Ana,\n\nCould we move Tuesday's project review to Wednesday at 10am? Our lead has a clash. The agenda stays the same, and I'll send a new invitation today. Sorry for the short notice.\n\nThanks,\nRob"
+   },
+   {
+    "name": "second",
+    "text": "Hi Ana,\n\nTuesday's review is off because Greg's on sick leave again, and honestly it's been a nightmare here. Maybe Wednesday? Or Thursday. I'll see what I can do and get back to you at some point.\n\nThanks,\nRob"
+   }
+  ]
+ },
+ {
+  "id": "five-hire-1",
+  "domain": "hire",
+  "tier": "five",
+  "ask": "I'm hiring an office manager for a 35-person design studio in Manchester. Here's the shortlist. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Rachel Dunn",
+    "text": "Office manager at a 20-person agency, 6 years\nRuns facilities, IT suppliers and new-starter inductions\nNotice period: 1 month"
+   },
+   {
+    "name": "Megan Hart",
+    "text": "Executive assistant at a law firm, 8 years\nRan a full office move and manages a £90k budget\nNotice period: 3 months"
+   },
+   {
+    "name": "Olivia Shaw",
+    "text": "Operations coordinator at a charity, 5 years\nSet up the HR system and handles payroll queries\nNotice period: 1 month"
+   },
+   {
+    "name": "Grace Lowe",
+    "text": "Studio coordinator at a design firm, 4 years\nKnows the industry and books freelancers, but hasn't handled budgets\nNotice period: 2 weeks"
+   },
+   {
+    "name": "Jessica Ward",
+    "text": "Facilities manager at a university department, 7 years\nStrong on health and safety, new to small firms\nNotice period: 2 months"
+   }
+  ]
+ },
+ {
+  "id": "five-hire-2",
+  "domain": "hire",
+  "tier": "five",
+  "ask": "I'm hiring a sales lead for a 40-person software company selling to UK schools. Here's the shortlist. Who should get the offer?",
+  "better": null,
+  "options": [
+   {
+    "name": "Adam Lister",
+    "text": "Regional sales manager at a textbook publisher, 10 years\nKnows school heads well; new to software\nBeat target in 7 of 10 years"
+   },
+   {
+    "name": "Ben Foley",
+    "text": "Account executive at a payroll software firm, 6 years\nTop seller for the last two years; has never sold to schools\nHas never managed a team"
+   },
+   {
+    "name": "Chris Noble",
+    "text": "Sales manager at a school trips company, 5 years\nManages four reps; sells to the same budget holders\nProduct was much simpler"
+   },
+   {
+    "name": "David Yates",
+    "text": "Former deputy head, 12 years in schools\nTwo years selling edtech, with one strong year and one weak year\nVery credible with buyers"
+   },
+   {
+    "name": "Ethan Marsh",
+    "text": "Head of sales at a small edtech start-up, 3 years\nBuilt the team from nothing; the company ran out of money\nKnows the market, but has limited experience at scale"
+   }
+  ]
+ },
+ {
+  "id": "five-vendor-1",
+  "domain": "supplier",
+  "tier": "five",
+  "ask": "We need an accounting package for a 45-person business. Here are the five quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Tallybook",
+    "text": "£420 a month\nLive in 2 weeks\nEmail support only"
+   },
+   {
+    "name": "Clearsheet",
+    "text": "£560 a month\nLive in 1 week\nUK phone support"
+   },
+   {
+    "name": "Fennel Accounts",
+    "text": "£380 a month\nLive in 5 weeks\nPhone support for an extra £60 a month"
+   },
+   {
+    "name": "Marlin Ledger",
+    "text": "£490 a month\nLive in 3 weeks\nUK phone support, with a named account manager after year one"
+   },
+   {
+    "name": "Ostler Finance",
+    "text": "£450 a month\nLive in 4 weeks\nChat support 24 hours a day"
+   }
+  ]
+ },
+ {
+  "id": "five-vendor-2",
+  "domain": "supplier",
+  "tier": "five",
+  "ask": "We need an IT support provider for our 60 staff. Here are the five quotes. Which should we sign?",
+  "better": null,
+  "options": [
+   {
+    "name": "Northgate IT",
+    "text": "£2,700 a month\nAnswers within 30 minutes\nNamed engineer; 24-month contract"
+   },
+   {
+    "name": "Corebridge",
+    "text": "£2,250 a month\nAnswers within 2 hours\nShared helpdesk; 12-month contract"
+   },
+   {
+    "name": "Helix Support",
+    "text": "£2,950 a month\nAnswers within 15 minutes\nShared helpdesk; 12-month contract"
+   },
+   {
+    "name": "Patchwell",
+    "text": "£2,400 a month\nAnswers within 1 hour\nNamed engineer; 36-month contract"
+   },
+   {
+    "name": "Redkite",
+    "text": "£2,550 a month\nAnswers within 1 hour\nNamed engineer on weekdays; 18-month contract"
+   }
+  ]
+ },
+ {
+  "id": "five-project-1",
+  "domain": "project",
+  "tier": "five",
+  "ask": "We're a 250-person manufacturer. We can fund one of these five projects next year. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Energy monitoring",
+    "text": "Costs £110k\nSaves about £45k a year\nLow disruption"
+   },
+   {
+    "name": "Line 3 automation",
+    "text": "Costs £400k\nSaves about £170k a year\nSix weeks of disruption"
+   },
+   {
+    "name": "Quality cameras",
+    "text": "Costs £220k\nShould cut scrap by a third, worth about £85k a year\nNeeds new skills on the floor"
+   },
+   {
+    "name": "Warehouse racking",
+    "text": "Costs £160k\nFrees up space worth about £60k a year\nTwo weeks of disruption"
+   },
+   {
+    "name": "Maintenance software",
+    "text": "Costs £90k\nShould cut downtime by about 10%, worth about £35k a year\nEngineers must log every job"
+   }
+  ]
+ },
+ {
+  "id": "five-project-2",
+  "domain": "project",
+  "tier": "five",
+  "ask": "We're a 500-person housing association. We can fund one of these five projects next year. Which one?",
+  "better": null,
+  "options": [
+   {
+    "name": "Repairs scheduling",
+    "text": "Costs £200k\nShould cut missed visits by 30%\nDepends on a new mobile app for trades"
+   },
+   {
+    "name": "Damp sensors",
+    "text": "Costs £260k\nEarly warning across 1,500 homes\nRegulators are watching this area"
+   },
+   {
+    "name": "Tenant portal",
+    "text": "Costs £180k\nTenants have asked for it; should cut calls by 15%\nOlder tenants may not use it"
+   },
+   {
+    "name": "Rent arrears analytics",
+    "text": "Costs £120k\nShould reduce arrears by about £300k\nNeeds careful handling of vulnerable tenants"
+   },
+   {
+    "name": "Asset data clean-up",
+    "text": "Costs £150k\nUnderpins every other project\nNo visible change for tenants"
+   }
+  ]
+ }
+]
